@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/ShoppingPage/static/css/main.bb4ac631.css",
-    "main.js": "/ShoppingPage/static/js/main.ab582bf8.js",
+    "main.css": "/ShoppingPage/static/css/main.c5b50a9c.css",
+    "main.js": "/ShoppingPage/static/js/main.95beaa37.js",
     "static/js/453.71c3d243.chunk.js": "/ShoppingPage/static/js/453.71c3d243.chunk.js",
+    "static/media/perfume3.jpg": "/ShoppingPage/static/media/perfume3.cb40c0f9ebe00e28c846.jpg",
+    "static/media/perfume6.jpg": "/ShoppingPage/static/media/perfume6.aaa592f78e7b91e04e33.jpg",
+    "static/media/perfume.jpg": "/ShoppingPage/static/media/perfume.650771bedc1c19d5d537.jpg",
+    "static/media/perfume2.jpg": "/ShoppingPage/static/media/perfume2.aa1774a26743842576dd.jpg",
+    "static/media/perfume5.jpg": "/ShoppingPage/static/media/perfume5.03c50bb1a9fdd8ed12ae.jpg",
+    "static/media/perfume4.jpg": "/ShoppingPage/static/media/perfume4.c7eddc482d564eea7727.jpg",
+    "static/media/perfume1.jpg": "/ShoppingPage/static/media/perfume1.948842815783de0b980f.jpg",
     "static/media/laura.jpg": "/ShoppingPage/static/media/laura.68833de5669c8bd60d02.jpg",
+    "static/media/chanel.jpg": "/ShoppingPage/static/media/chanel.32353805606c6cb619e3.jpg",
     "index.html": "/ShoppingPage/index.html",
-    "main.bb4ac631.css.map": "/ShoppingPage/static/css/main.bb4ac631.css.map",
-    "main.ab582bf8.js.map": "/ShoppingPage/static/js/main.ab582bf8.js.map",
+    "main.c5b50a9c.css.map": "/ShoppingPage/static/css/main.c5b50a9c.css.map",
+    "main.95beaa37.js.map": "/ShoppingPage/static/js/main.95beaa37.js.map",
     "453.71c3d243.chunk.js.map": "/ShoppingPage/static/js/453.71c3d243.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb4ac631.css",
-    "static/js/main.ab582bf8.js"
+    "static/css/main.c5b50a9c.css",
+    "static/js/main.95beaa37.js"
   ]
 }
