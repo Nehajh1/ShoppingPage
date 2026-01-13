@@ -23,6 +23,17 @@
   color: #000;
   font-size: 14px;
 }
+.nav span {
+  margin: 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav span.active {
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
+
 
 .headerRight {
   display: flex;

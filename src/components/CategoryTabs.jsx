@@ -1,20 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CategoryTabs.css";
 
-const CategoryTabs = () => {
-  const [active, setActive] = useState("HIM");
-
+const CategoryTabs = ({ activeCategory, setActiveCategory }) => {
   return (
-    <div className="tabs">
-      {["HIM", "HER", "UNISEX"].map((tab) => (
-        <button
-          key={tab}
-          className={active === tab ? "active" : ""}
-          onClick={() => setActive(tab)}
-        >
-          {tab}
-        </button>
-      ))}
+    <div className="categoryTabs">
+      <button
+        className={activeCategory === "all" ? "active" : ""}
+        onClick={() => setActiveCategory("all")}
+      >
+        All
+      </button>
+
+      <button
+        className={activeCategory === "men" ? "active" : ""}
+        onClick={() => setActiveCategory("men")}
+      >
+        Men
+      </button>
+
+      <button
+        className={activeCategory === "women" ? "active" : ""}
+        onClick={() => setActiveCategory("women")}
+      >
+        Women
+      </button>
+
+      <button
+        className={activeCategory === "unisex" ? "active" : ""}
+        onClick={() => setActiveCategory("unisex")}
+      >
+        Unisex
+      </button>
     </div>
   );
 };
