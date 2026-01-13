@@ -1,0 +1,66 @@
+.products {
+  padding: 60px;
+}
+
+.products h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.card {
+  text-align: center;
+}
+
+.imageBox {
+  overflow: hidden;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card h4 {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.sale {
+  font-weight: 600;
+}
+
+.mrp {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #222;
+}

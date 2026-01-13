@@ -1,0 +1,24 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 60px;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.copy {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
