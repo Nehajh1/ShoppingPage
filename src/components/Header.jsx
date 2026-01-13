@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ searchTerm, setSearchTerm }) => {
   return (
     <header className="header">
       <div className="headerLeft">
@@ -16,7 +16,12 @@ const Header = () => {
       </div>
 
       <div className="headerRight">
-        <input type="text" placeholder="Search perfumes" />
+        <input
+          type="text"
+          placeholder="Search perfumes..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
         <span>👤</span>
         <span>🛒</span>
       </div>
@@ -25,3 +30,4 @@ const Header = () => {
 };
 
 export default Header;
+
