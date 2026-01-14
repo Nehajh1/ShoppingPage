@@ -33,7 +33,8 @@ const Footer = () => {
           </div>
 
           {/* ORDER & SHIPPING */}
-          <div className="footerColumn">
+          <div className="lastcolm">
+            <div className="footerColumn">
             <h4>Order & Shipping</h4>
             <ul>
               <li>Privacy Policy</li>
@@ -41,6 +42,7 @@ const Footer = () => {
               <li>Shipping Policy</li>
               <li>Track My Order</li>
             </ul>
+          </div>
           </div>
 
         </div>
