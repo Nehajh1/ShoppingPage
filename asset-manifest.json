@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ShoppingPage/static/css/main.0f453876.css",
-    "main.js": "/ShoppingPage/static/js/main.9496d3b8.js",
+    "main.css": "/ShoppingPage/static/css/main.2e8cbea9.css",
+    "main.js": "/ShoppingPage/static/js/main.7fdc04e4.js",
     "static/js/453.e184cad6.chunk.js": "/ShoppingPage/static/js/453.e184cad6.chunk.js",
     "static/media/santa.jpg": "/ShoppingPage/static/media/santa.d455deceb71de305f0eb.jpg",
     "static/media/perfume3.jpg": "/ShoppingPage/static/media/perfume3.cb40c0f9ebe00e28c846.jpg",
@@ -31,12 +31,12 @@
     "static/media/video2.mp4": "/ShoppingPage/static/media/video2.e86a3f058602253e1800.mp4",
     "static/media/video7.mp4": "/ShoppingPage/static/media/video7.08108d1062cc59075b5a.mp4",
     "index.html": "/ShoppingPage/index.html",
-    "main.0f453876.css.map": "/ShoppingPage/static/css/main.0f453876.css.map",
-    "main.9496d3b8.js.map": "/ShoppingPage/static/js/main.9496d3b8.js.map",
+    "main.2e8cbea9.css.map": "/ShoppingPage/static/css/main.2e8cbea9.css.map",
+    "main.7fdc04e4.js.map": "/ShoppingPage/static/js/main.7fdc04e4.js.map",
     "453.e184cad6.chunk.js.map": "/ShoppingPage/static/js/453.e184cad6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f453876.css",
-    "static/js/main.9496d3b8.js"
+    "static/css/main.2e8cbea9.css",
+    "static/js/main.7fdc04e4.js"
   ]
 }
