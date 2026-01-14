@@ -1,0 +1,100 @@
+.watchBuy {
+  padding: 40px 20px;
+}
+
+.watchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.watchHeader h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.arrows button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.arrows button:hover {
+  background-color: #333;
+}
+
+.watchSlider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.watchSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.watchCard {
+  min-width: 220px;
+  height: 380px; /* increased to fit info below */
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.watchCard video {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* info below video */
+.videoInfo {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoInfo h4 {
+  margin: 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sale {
+  font-weight: 600;
+  color: #000;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discount {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}

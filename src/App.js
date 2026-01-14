@@ -8,6 +8,7 @@ import CategoryTabs from "./components/CategoryTabs";
 import ProductGrid from "./components/ProductGrid";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import WatchBuy from "./components/Watch&Buy";
 
 
 
@@ -66,6 +67,7 @@ function App() {
         activeType={activeType}
         
       />
+      <WatchBuy/>
       <Cart
       cart={cart}
       addToCart={addToCart}
