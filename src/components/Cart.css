@@ -1,0 +1,92 @@
+
+.cartBox {
+  position: fixed;
+  right: 20px;
+  top: 90px;
+  width: 320px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.cartBox h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.cartItem {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.cartItem img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h4 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.details p {
+  font-size: 13px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.qty button:hover {
+  background-color: #333;
+}
+
+.qty span {
+  font-size: 14px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.empty {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}

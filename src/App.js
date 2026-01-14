@@ -5,33 +5,38 @@ import Header from "./components/Header";
 import CategoryTabs from "./components/CategoryTabs";
 import ProductGrid from "./components/ProductGrid";
 import Footer from "./components/Footer";
+import Cart from "./components/Cart";
 
 
 function App() {
-    const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
   const [activeType, setActiveType] = useState("perfumes");
   const [cart, setCart] = useState([]);
 
-  // ✅ REAL ADD TO CART LOGIC
-  const addToCart = (product) => {
-    setCart((prevCart) => {
-      const existingItem = prevCart.find(
-        (item) => item.id === product.id
-      );
+   const addToCart = (product) => {
+    setCart((prev) => {
+      const exists = prev.find((i) => i.id === product.id);
 
-      if (existingItem) {
-        return prevCart.map((item) =>
-          item.id === product.id
-            ? { ...item, qty: item.qty + 1 }
-            : item
+      if (exists) {
+        return prev.map((i) =>
+          i.id === product.id ? { ...i, qty: i.qty + 1 } : i
         );
       }
 
-      return [...prevCart, { ...product, qty: 1 }];
+      return [...prev, { ...product, qty: 1 }];
     });
   };
 
+  const removeFromCart = (productId) => {
+    setCart((prev) =>
+      prev
+        .map((i) =>
+          i.id === productId ? { ...i, qty: i.qty - 1 } : i
+        )
+        .filter((i) => i.qty > 0)
+    );
+  };
   return (
     <>
     <PromoBanner/>
@@ -54,6 +59,11 @@ function App() {
         addToCart={addToCart}
         activeType={activeType}
         
+      />
+      <Cart
+      cart={cart}
+      addToCart={addToCart}
+      removeFromCart={removeFromCart}
       />
       <Footer/>
     </>

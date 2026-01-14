@@ -1,15 +1,30 @@
 import React from "react";
+import "./Cart.css";
 
-const Cart = ({ cartItems }) => {
-  if (!cartItems.length) return null;
+const Cart = ({ cart, addToCart, removeFromCart }) => {
+  if (cart.length === 0) {
+    return <p className="empty">Your cart is empty</p>;
+  }
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h3>Cart Items</h3>
-      {cartItems.map((item) => (
-        <p key={item.id}>
-          {item.name} × {item.quantity}
-        </p>
+    <div className="cartBox">
+      <h3>Your Cart</h3>
+
+      {cart.map((item) => (
+        <div className="cartItem" key={item.id}>
+          <img src={item.image} alt={item.name} />
+
+          <div className="details">
+            <h4>{item.name}</h4>
+            <p>{item.price}</p>
+
+            <div className="qty">
+              <button onClick={() => removeFromCart(item.id)}>-</button>
+              <span>{item.qty}</span>
+              <button onClick={() => addToCart(item)}>+</button>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );
