@@ -6,6 +6,11 @@
   border-bottom: 1px solid #ddd;
 }
 
+.nav {
+  display: flex;
+  gap: 22px;
+}
+
 .nav span {
   margin: 0 12px;
   cursor: pointer;
@@ -13,6 +18,12 @@
 
 .nav span.active {
   border-bottom: 2px solid black;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
 .cart {
@@ -47,4 +58,44 @@
 .headerRight input {
   padding: 8px 14px;
   border: 1px solid #ccc;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mobileMenu span {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .searchInput {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
 }
