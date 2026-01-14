@@ -1,10 +1,24 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 22px 60px;
-  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
 }
+
+.nav span {
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.nav span.active {
+  border-bottom: 2px solid black;
+}
+
+.cart {
+  font-weight: bold;
+}
+
 
 .headerLeft {
   display: flex;
@@ -23,17 +37,6 @@
   color: #000;
   font-size: 14px;
 }
-.nav span {
-  margin: 0 15px;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.nav span.active {
-  border-bottom: 2px solid black;
-  padding-bottom: 4px;
-}
-
 
 .headerRight {
   display: flex;

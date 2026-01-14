@@ -27,50 +27,34 @@ const products = [
 ];
 
 
-const ProductGrid = ({ searchTerm, activeCategory, activeType }) => {
-  const filteredProducts = products.filter((product) => {
-  const matchesSearch = product.name
-    ?.toLowerCase()
-    .includes((searchTerm || "").toLowerCase());
+const ProductGrid = ({ searchTerm, activeCategory, activeType, addToCart }) => {
+ const filteredProducts = products.filter((product) => {
+    const matchesSearch =
+      product.name.toLowerCase().includes(searchTerm.toLowerCase());
 
-  const matchesCategory =
-    activeCategory === "all" ||
-    product.category?.toLowerCase() === activeCategory;
+    const matchesCategory =
+      activeCategory === "all" || product.category === activeCategory;
 
-  const matchesType =
-    activeType === "perfumes" ||
-    product.type?.toLowerCase() === activeType;
+    const matchesType =
+      activeType === "perfumes" || product.type === activeType;
 
-  return matchesSearch && matchesCategory && matchesType;
-});
-
-
-
+    return matchesSearch && matchesCategory && matchesType;
+  });
 
   return (
     <section className="products">
-      <h2>New Launches</h2>
-
       <div className="grid">
-        {filteredProducts.length > 0 ? (
+        {filteredProducts.length ? (
           filteredProducts.map((p) => (
             <div className="card" key={p.id}>
-              <div className="imageBox">
-                <img src={p.image} alt={p.name} />
-              </div>
-
+              <img src={p.image} alt={p.name} />
               <h4>{p.name}</h4>
-
-              <div className="price">
-                <span className="sale">{p.price}</span>
-                <span className="mrp">{p.mrp}</span>
-              </div>
-
-              <button>Add to Cart</button>
+              <p>{p.price} <span>{p.mrp}</span></p>
+              <button onClick={() => addToCart(p)}>Add to Cart</button>
             </div>
           ))
         ) : (
-          <p className="noResult">No perfumes found</p>
+          <p>No perfumes found</p>
         )}
       </div>
     </section>
