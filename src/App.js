@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 
+import OfferBar from "./components/OfferBar";
 import PromoBanner from "./components/PromoBanner";
 import Header from "./components/Header";
 import CategoryTabs from "./components/CategoryTabs";
 import ProductGrid from "./components/ProductGrid";
-import Footer from "./components/Footer";
 import Cart from "./components/Cart";
+import Footer from "./components/Footer";
+
+
 
 
 function App() {
@@ -39,6 +42,7 @@ function App() {
   };
   return (
     <>
+    <OfferBar/>
     <PromoBanner/>
         <Header
         searchTerm={searchTerm}

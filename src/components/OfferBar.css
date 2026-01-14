@@ -1,0 +1,36 @@
+.offerBar {
+  width: 100%;
+  background: linear-gradient(90deg, #b31217, #e52d27);
+  color: #fff;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.offerText {
+  white-space: nowrap;
+  width: max-content;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 100%;
+  animation: moveText 30s linear infinite;
+}
+.offerText span {
+  white-space: nowrap;
+  padding-right: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
