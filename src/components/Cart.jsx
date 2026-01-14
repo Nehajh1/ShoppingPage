@@ -3,7 +3,7 @@ import "./Cart.css";
 
 const Cart = ({ cart, addToCart, removeFromCart }) => {
   if (cart.length === 0) {
-    return <p className="empty">Your cart is empty</p>;
+    return ;
   }
 
   return (

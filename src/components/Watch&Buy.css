@@ -10,7 +10,9 @@
 }
 
 .watchHeader h2 {
-  font-size: 24px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-size: 64px;
   font-weight: 600;
 }
 

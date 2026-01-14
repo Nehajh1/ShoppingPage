@@ -6,6 +6,7 @@
 }
 
 .categoryTabs button {
+  margin-top: 50px;
   padding: 8px 18px;
   border-radius: 20px;
   border: 1px solid #ccc;
