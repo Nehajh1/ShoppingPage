@@ -1,0 +1,12 @@
+.adBanner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.adBanner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

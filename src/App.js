@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import OfferBar from "./components/OfferBar";
 import PromoBanner from "./components/PromoBanner";
 import Header from "./components/Header";
+import AdBanner from "./components/AdBanner";
 import CategoryTabs from "./components/CategoryTabs";
 import ProductGrid from "./components/ProductGrid";
 import Cart from "./components/Cart";
@@ -52,6 +53,7 @@ function App() {
         setActiveType={setActiveType}
       />
 
+      <AdBanner/>
       <CategoryTabs
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
