@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+
+import PromoBanner from "./components/PromoBanner";
 import Header from "./components/Header";
 import CategoryTabs from "./components/CategoryTabs";
 import ProductGrid from "./components/ProductGrid";
+import Footer from "./components/Footer";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -10,6 +13,7 @@ function App() {
 
   return (
     <>
+    <PromoBanner/>
       <Header
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
@@ -27,6 +31,7 @@ function App() {
         activeCategory={activeCategory}
         activeType={activeType}
       />
+      <Footer/>
     </>
   );
 }
