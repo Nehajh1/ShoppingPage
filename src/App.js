@@ -10,6 +10,7 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import WatchBuy from "./components/Watch&Buy";
 import NewLaunches from "./components/Newlaunches";
+import CustomerReviews from "./components/CustomerReview";
 
 
 
@@ -77,6 +78,7 @@ function App() {
       addToCart={addToCart}
       removeFromCart={removeFromCart}
       />
+      <CustomerReviews/>
       <Footer/>
     </>
   );
