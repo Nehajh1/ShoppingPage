@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import WatchBuy from "./components/Watch&Buy";
 import NewLaunches from "./components/Newlaunches";
 import CustomerReviews from "./components/CustomerReview";
+import OurInstagram from "./components/Insta";
 
 
 
@@ -79,6 +80,7 @@ function App() {
       removeFromCart={removeFromCart}
       />
       <CustomerReviews/>
+      <OurInstagram/>
       <Footer/>
     </>
   );

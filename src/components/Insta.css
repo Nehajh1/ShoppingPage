@@ -1,0 +1,79 @@
+.instagramSection {
+  padding: 60px 20px;
+}
+
+.instagramHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instagramHeader h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* arrows */
+.arrows button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.arrows button:hover {
+  background: #333;
+}
+
+/* row */
+.instagramRow {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.instagramRow::-webkit-scrollbar {
+  display: none;
+}
+
+/* card */
+.instaCard {
+  position: relative;
+  min-width: 220px;
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.instaCard img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* instagram icon */
+.instaIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+/* show icon on hover */
+.instaCard:hover .instaIcon {
+  opacity: 1;
+}
