@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/ShoppingPage/static/css/main.f3c42831.css",
-    "main.js": "/ShoppingPage/static/js/main.34fd1388.js",
+    "main.css": "/ShoppingPage/static/css/main.f3b3ea41.css",
+    "main.js": "/ShoppingPage/static/js/main.2177f0b8.js",
     "static/js/453.e184cad6.chunk.js": "/ShoppingPage/static/js/453.e184cad6.chunk.js",
     "static/media/santa.jpg": "/ShoppingPage/static/media/santa.d455deceb71de305f0eb.jpg",
+    "static/media/p2.jpg": "/ShoppingPage/static/media/p2.a0b831b79918b2a7c93e.jpg",
     "static/media/perfume3.jpg": "/ShoppingPage/static/media/perfume3.cb40c0f9ebe00e28c846.jpg",
+    "static/media/p3.jpg": "/ShoppingPage/static/media/p3.084e2567470d952d1c82.jpg",
     "static/media/img4.jpg": "/ShoppingPage/static/media/img4.759aeb7e0daed983ff6d.jpg",
     "static/media/perfume6.jpg": "/ShoppingPage/static/media/perfume6.aaa592f78e7b91e04e33.jpg",
     "static/media/perfume.jpg": "/ShoppingPage/static/media/perfume.650771bedc1c19d5d537.jpg",
@@ -12,12 +14,17 @@
     "static/media/img2.jpg": "/ShoppingPage/static/media/img2.3c4b09d3a9efa9d3c0c0.jpg",
     "static/media/perfume5.jpg": "/ShoppingPage/static/media/perfume5.03c50bb1a9fdd8ed12ae.jpg",
     "static/media/perfume4.jpg": "/ShoppingPage/static/media/perfume4.c7eddc482d564eea7727.jpg",
+    "static/media/p6.jpg": "/ShoppingPage/static/media/p6.448ef9b2158a1b62a9b9.jpg",
+    "static/media/p7.jpg": "/ShoppingPage/static/media/p7.d7ee70cb81133409db2c.jpg",
     "static/media/perfume1.jpg": "/ShoppingPage/static/media/perfume1.948842815783de0b980f.jpg",
     "static/media/laura.jpg": "/ShoppingPage/static/media/laura.68833de5669c8bd60d02.jpg",
+    "static/media/p5.jpg": "/ShoppingPage/static/media/p5.096afb72eea7dcf7f259.jpg",
     "static/media/img8.jpg": "/ShoppingPage/static/media/img8.883578fecbaa44331775.jpg",
+    "static/media/p1.jpg": "/ShoppingPage/static/media/p1.883578fecbaa44331775.jpg",
     "static/media/img3.jpg": "/ShoppingPage/static/media/img3.4832d111be75e417e509.jpg",
     "static/media/img1.jpg": "/ShoppingPage/static/media/img1.e4ac867b2e33f981a096.jpg",
     "static/media/chanel.jpg": "/ShoppingPage/static/media/chanel.32353805606c6cb619e3.jpg",
+    "static/media/p4.jpg": "/ShoppingPage/static/media/p4.238be1eed7c6d07c6890.jpg",
     "static/media/img7.jpg": "/ShoppingPage/static/media/img7.ef0f5eb88ddc5025c8ce.jpg",
     "static/media/ad1.webp": "/ShoppingPage/static/media/ad1.64890046a1fd8a4fa21b.webp",
     "static/media/video5.mp4": "/ShoppingPage/static/media/video5.c8c675d31ab5cec6491a.mp4",
@@ -31,12 +38,12 @@
     "static/media/video2.mp4": "/ShoppingPage/static/media/video2.e86a3f058602253e1800.mp4",
     "static/media/video7.mp4": "/ShoppingPage/static/media/video7.08108d1062cc59075b5a.mp4",
     "index.html": "/ShoppingPage/index.html",
-    "main.f3c42831.css.map": "/ShoppingPage/static/css/main.f3c42831.css.map",
-    "main.34fd1388.js.map": "/ShoppingPage/static/js/main.34fd1388.js.map",
+    "main.f3b3ea41.css.map": "/ShoppingPage/static/css/main.f3b3ea41.css.map",
+    "main.2177f0b8.js.map": "/ShoppingPage/static/js/main.2177f0b8.js.map",
     "453.e184cad6.chunk.js.map": "/ShoppingPage/static/js/453.e184cad6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3c42831.css",
-    "static/js/main.34fd1388.js"
+    "static/css/main.f3b3ea41.css",
+    "static/js/main.2177f0b8.js"
   ]
 }
