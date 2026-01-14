@@ -10,6 +10,7 @@ import perfume3 from "./Images/perfume3.jpg"
 import perfume4 from "./Images/perfume4.jpg"
 import perfume5 from "./Images/perfume5.jpg"
 import perfume6 from "./Images/perfume6.jpg"
+import ProductCard from "./ProductCard";
 
 const products = [
   { id: 1, name: "Aqua Wave", category: "men",type: "perfumes", price: "₹899", mrp: "₹1499", image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f" },
@@ -27,38 +28,40 @@ const products = [
 ];
 
 
-const ProductGrid = ({ searchTerm, activeCategory, activeType, addToCart }) => {
- const filteredProducts = products.filter((product) => {
-    const matchesSearch =
-      product.name.toLowerCase().includes(searchTerm.toLowerCase());
+const ProductGrid = ({
+  searchTerm = "",
+  activeCategory,
+   activeType,
+  addToCart
+}) => {
 
-    const matchesCategory =
+  const filteredProducts = products.filter((product) => {
+    const matchCategory =
       activeCategory === "all" || product.category === activeCategory;
 
-    const matchesType =
+      const matchesType =
       activeType === "perfumes" || product.type === activeType;
 
-    return matchesSearch && matchesCategory && matchesType;
+    const matchSearch =
+      product.name.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return matchCategory && matchSearch && matchesType;
   });
 
   return (
-    <section className="products">
-      <div className="grid">
-        {filteredProducts.length ? (
-          filteredProducts.map((p) => (
-            <div className="card" key={p.id}>
-              <img src={p.image} alt={p.name} />
-              <h4>{p.name}</h4>
-              <p>{p.price} <span>{p.mrp}</span></p>
-              <button onClick={() => addToCart(p)}>Add to Cart</button>
-            </div>
-          ))
-        ) : (
-          <p>No perfumes found</p>
-        )}
-      </div>
-    </section>
+    <div className="grid">
+      {filteredProducts.length === 0 ? (
+        <p>No perfumes found</p>
+      ) : (
+        filteredProducts.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            addToCart={addToCart}
+          />
+        ))
+      )}
+    </div>
   );
 };
-
 export default ProductGrid;

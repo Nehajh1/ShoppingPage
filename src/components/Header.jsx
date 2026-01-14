@@ -1,22 +1,12 @@
 import React from "react";
 import "./Header.css";
 
-const Header = ({
-  searchTerm,
-  setSearchTerm,
-  activeType,
-  setActiveType,
-  cartItems
-}) => {
-  const cartCount = (cartItems || []).reduce(
-  (total, item) => total + item.quantity,
-  0
-);
+const Header = ({ searchTerm, setSearchTerm,activeType, setActiveType, cart }) => {
+  const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
 
   return (
     <header className="header">
-      <h2 className="logo">FragaNote</h2>
-
+      <h2>Fraganote</h2>
       <nav className="nav">
         <span className={activeType === "perfumes" ? "active" : ""} onClick={() => setActiveType("perfumes")}>
           Perfumes
@@ -32,17 +22,19 @@ const Header = ({
         </span>
       </nav>
 
+
       <input
         type="text"
         placeholder="Search perfumes..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-
-      <div className="cart">👤 {cartCount}</div>
-      <div className="cart">🛒 {cartCount}</div>
+      <div className="cart">
+        🛒 Cart ({totalItems})
+      </div>
     </header>
   );
 };
 
 export default Header;
+
