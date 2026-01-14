@@ -9,6 +9,7 @@ import ProductGrid from "./components/ProductGrid";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import WatchBuy from "./components/Watch&Buy";
+import NewLaunches from "./components/Newlaunches";
 
 
 
@@ -68,6 +69,9 @@ function App() {
         
       />
       <WatchBuy/>
+      <NewLaunches
+      addToCart={addToCart}
+      />
       <Cart
       cart={cart}
       addToCart={addToCart}
