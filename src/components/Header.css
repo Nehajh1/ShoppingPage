@@ -1,101 +1,121 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 14px 20px;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
+/* LEFT */
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+/* CENTER */
 .nav {
   display: flex;
-  gap: 22px;
+  gap: 30px;
 }
 
 .nav span {
-  margin: 0 12px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .nav span.active {
   border-bottom: 2px solid black;
 }
 
-.searchInput {
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+/* RIGHT */
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerRight input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
 }
 
 .cart {
   font-weight: bold;
 }
 
-
-.headerLeft {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.logo {
-  letter-spacing: 3px;
-  font-size: 22px;
-}
-
-.nav a {
-  margin-right: 28px;
-  text-decoration: none;
-  color: #000;
-  font-size: 14px;
-}
-
-.headerRight {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.headerRight input {
-  padding: 8px 14px;
-  border: 1px solid #ccc;
-}
-
+/* HAMBURGER */
 .hamburger {
   display: none;
   font-size: 26px;
   cursor: pointer;
 }
 
-/* Mobile Menu */
+/* MOBILE MENU */
 .mobileMenu {
-  position: absolute;
-  top: 65px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
-  padding: 16px 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  animation: slideIn 0.3s ease;
 }
 
 .mobileMenu span {
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 26px;
   cursor: pointer;
 }
+
+/* MOBILE VIEW */
 @media (max-width: 768px) {
   .nav {
     display: none;
   }
 
-  .searchInput {
-    display: none;
-  }
-
   .hamburger {
     display: block;
-    margin-left: auto;
+  }
+
+  .logo {
+   position: static;
+    transform: none;
+    margin: 0 auto;
+
+  }
+}
+
+/* SLIDE */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

@@ -34,3 +34,9 @@
   }
 }
 
+@media (max-width: 480px) {
+  .offerText span {
+    padding-right: 40px;
+  }
+}
+
