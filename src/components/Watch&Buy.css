@@ -100,3 +100,72 @@
   padding: 2px 6px;
   border-radius: 4px;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .watchCard {
+    min-width: 200px;
+    max-width: 200px;
+    height: 350px;
+  }
+
+  .watchCard video {
+    height: 200px;
+  }
+
+  .watchHeader h2 {
+    font-size: 40px;
+  }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+  .watchCard {
+    min-width: 180px;
+    max-width: 180px;
+    height: 320px;
+  }
+
+  .watchCard video {
+    height: 180px;
+  }
+
+  .watchHeader h2 {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .arrows {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .watchCard {
+    min-width: 150px;
+    max-width: 150px;
+    height: 280px;
+  }
+
+  .watchCard video {
+    height: 150px;
+  }
+
+  .videoInfo h4 {
+    font-size: 14px;
+  }
+
+  .sale, .mrp {
+    font-size: 12px;
+  }
+
+  .discount {
+    font-size: 10px;
+    padding: 1px 4px;
+  }
+}

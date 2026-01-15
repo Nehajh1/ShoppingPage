@@ -81,3 +81,44 @@
   font-size: 16px;
   color: gray;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageBox img {
+    height: 300px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imageBox img {
+    height: 250px;
+  }
+
+  .card h4 {
+    font-size: 14px;
+  }
+
+  .sale, .mrp {
+    font-size: 14px;
+  }
+
+  .card button {
+    padding: 10px;
+  }
+}
